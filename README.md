@@ -3,9 +3,11 @@
 
 ![custom ws parser](https://user-images.githubusercontent.com/11450939/48125227-2ad17f80-e2b9-11e8-900a-1a7ce5a20110.gif)
 
+> 图中页面地址：[http://websocket.org/echo.html](http://websocket.org/echo.html)，配置：ws://echo.websocket.org custom-ws:// enable://customParser
+
 
 ### 自定义websocket抓包调试
-实现插件的 `server` 服务，有关server的内容参见：[https://wproxy.org/whistle/plugins.html](https://wproxy.org/whistle/plugins.html)
+实现插件的 `server` 服务，有关server及规则配置的内容参见：[https://wproxy.org/whistle/plugins.html](https://wproxy.org/whistle/plugins.html)
 
 监听server的 `upgrade` 方法，建议直接借助[ws](https://github.com/websockets/ws)模块：
 
