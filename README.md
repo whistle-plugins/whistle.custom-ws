@@ -1,7 +1,7 @@
-**该方法不推荐使用，建议采用 pipe 代替，具体参见：https://github.com/whistle-plugins/examples/tree/master/whistle.test-pipe**
-
 # whistle.custom-ws
-[whistle v1.13.1](https://wproxy.org/whistle/update.html)版本开始 `Network / Frames / Composer` 暴露了接口给长连接(包括websocket请求)，插件可以把每个发送或接收到数据包显示到 `Network / Frames` 里面，并可以监听到 `Network / Frames` 的状态变化 及  `Network / Frames / Composer` 发送的指定目标及数据，从而通过插件可以实现抓包调试 `protobuf`、`quic` 等协议的数据。
+> 根据实际情况，也可以采用 pipe 代替，具体参见：https://github.com/whistle-plugins/examples/tree/master/whistle.test-pipe
+
+Whistle 支持 `Network / Frames / Composer` 暴露了接口给长连接(包括websocket请求)，插件可以把每个发送或接收到数据包显示到 `Network / Frames` 里面，并可以监听到 `Network / Frames` 的状态变化 及  `Network / Frames / Composer` 发送的指定目标及数据，从而通过插件可以实现抓包调试 `protobuf`、`quic` 等协议的数据。
 
 ![custom ws parser](https://user-images.githubusercontent.com/11450939/48125227-2ad17f80-e2b9-11e8-900a-1a7ce5a20110.gif)
 
